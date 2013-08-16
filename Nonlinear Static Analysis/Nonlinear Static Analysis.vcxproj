@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C66D7903-5369-4B37-A047-FB7C75ECEBDC}</ProjectGuid>
+    <RootNamespace>NonlinearStaticAnalysis</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\Joeny Bui\Dropbox\C++ Library\boost_1_49_0;C:\Users\Joeny Bui\Dropbox\C++ Library\armadillo-2.4.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Beam2D.h" />
+    <ClInclude Include="BeamLoad2D.h" />
+    <ClInclude Include="DegreeOfFreedom2D.h" />
+    <ClInclude Include="ElasticFrame2D.h" />
+    <ClInclude Include="EventAnalysis2D.h" />
+    <ClInclude Include="MomentLoad2D.h" />
+    <ClInclude Include="Node2D.h" />
+    <ClInclude Include="NodeLoad2D.h" />
+    <ClInclude Include="NonLinearFrame2D.h" />
+    <ClInclude Include="NonLinearStatic2D.h" />
+    <ClInclude Include="PointLoad2D.h" />
+    <ClInclude Include="PyramidLoad2D.h" />
+    <ClInclude Include="Section2D.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TriangularLoad2D.h" />
+    <ClInclude Include="UniformLoad2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Beam2D.cpp" />
+    <ClCompile Include="BeamLoad2D.cpp" />
+    <ClCompile Include="DegreeOfFreedom2D.cpp" />
+    <ClCompile Include="ElasticFrame2D.cpp" />
+    <ClCompile Include="EventAnalysis2D.cpp" />
+    <ClCompile Include="MainFile.cpp" />
+    <ClCompile Include="MomentLoad2D.cpp" />
+    <ClCompile Include="Node2D.cpp" />
+    <ClCompile Include="NodeLoad2D.cpp" />
+    <ClCompile Include="NonLinearFrame2D.cpp" />
+    <ClCompile Include="NonLinearStatic2D.cpp" />
+    <ClCompile Include="PointLoad2D.cpp" />
+    <ClCompile Include="PyramidLoad2D.cpp" />
+    <ClCompile Include="Section2D.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TriangularLoad2D.cpp" />
+    <ClCompile Include="UniformLoad.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
